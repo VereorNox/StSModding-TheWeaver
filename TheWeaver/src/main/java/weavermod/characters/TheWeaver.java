@@ -60,17 +60,17 @@ public class TheWeaver extends CustomPlayer {
     // =============== TEXTURES OF BIG ENERGY ORB ===============
 
     public static final String[] orbTextures = {
-            "defaultModResources/images/char/defaultCharacter/orb/layer1.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer2.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer3.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer4.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer5.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer6.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer1d.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer2d.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer3d.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer4d.png",
-            "defaultModResources/images/char/defaultCharacter/orb/layer5d.png",};
+            "weaverModResources/images/char/defaultCharacter/orb/layer1.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer2.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer3.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer4.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer5.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer6.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer1d.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer2d.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer3d.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer4d.png",
+            "weaverModResources/images/char/defaultCharacter/orb/layer5d.png",};
 
     // =============== /TEXTURES OF BIG ENERGY ORB/ ===============
 
@@ -79,9 +79,9 @@ public class TheWeaver extends CustomPlayer {
 
     public TheWeaver(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "defaultModResources/images/char/defaultCharacter/orb/vfx.png", null,
+                "weaverModResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "defaultModResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "weaverModResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  

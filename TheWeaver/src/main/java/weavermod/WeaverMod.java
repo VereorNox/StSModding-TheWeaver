@@ -70,10 +70,10 @@ public class WeaverMod
         
     // Image folder name - This is where your image folder is.
     // Setting it here is good practice in case you ever need to move/rename it without screwing up every single path.
-    // In this case, the image folder is resources/defaultModResources/images
+    // In this case, the image folder is resources/weaverModResources/images
     // (and then a specific card would continue to, say, /cards/Strike.png).
 
-    private static final String DEFAULT_MOD_ASSETS_FOLDER = "defaultModResources/images";
+    private static final String DEFAULT_MOD_ASSETS_FOLDER = "weaverModResources/images";
 
     // Card backgrounds - The actual rectangular card.
     private static final String ATTACK_DEFAULT_GRAY = "512/bg_attack_default_gray.png";
@@ -133,9 +133,9 @@ public class WeaverMod
 
     // =============== IMAGE PATHS =================
 
-    // This is the command that will link up your core assets folder (line 89) ("defaultModResources/images")
+    // This is the command that will link up your core assets folder (line 89) ("weaverModResources/images")
     // together with the card image (everything above) ("cards/Attack.png") and it puts a "/" between them.
-    // When adding a card image, you can, in fact, just do "defaultModResources/images/cards/Attack.png" in the actual card file.
+    // When adding a card image, you can, in fact, just do "weaverModResources/images/cards/Attack.png" in the actual card file.
     // This however, is good practice in case you want to change your "/images" folder at any point in time.
 
     /**
@@ -316,27 +316,27 @@ public class WeaverMod
 
         // CardStrings
         BaseMod.loadCustomStringsFile(CardStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Card-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Card-Strings.json");
 
         // PowerStrings
         BaseMod.loadCustomStringsFile(PowerStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Power-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Power-Strings.json");
 
         // RelicStrings
         BaseMod.loadCustomStringsFile(RelicStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Relic-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Relic-Strings.json");
 
         // PotionStrings
         BaseMod.loadCustomStringsFile(PotionStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Potion-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Potion-Strings.json");
 
         // CharacterStrings
         BaseMod.loadCustomStringsFile(CharacterStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Character-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Character-Strings.json");
 
         // OrbStrings
         BaseMod.loadCustomStringsFile(OrbStrings.class,
-                "defaultModResources/localization/eng/WeaverMod-Orb-Strings.json");
+                "weaverModResources/localization/eng/WeaverMod-Orb-Strings.json");
 
         logger.info("Done edittting strings");
     }

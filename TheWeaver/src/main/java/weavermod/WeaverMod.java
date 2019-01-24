@@ -116,18 +116,18 @@ public class WeaverMod
     public static final String DEFAULT_ORB = "orbs/default_orb.png";
 
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "char/defaultCharacter/corpse.png";
+    private static final String THE_WEAVER_BUTTON = "charSelect/DefaultCharacterButton.png";
+    private static final String THE_WEAVER_PORTRAIT = "charSelect/DefaultCharacterPortraitBG.png";
+    public static final String THE_WEAVER_SHOULDER_1 = "char/defaultCharacter/shoulder.png";
+    public static final String THE_WEAVER_SHOULDER_2 = "char/defaultCharacter/shoulder2.png";
+    public static final String THE_WEAVER_CORPSE = "char/defaultCharacter/corpse.png";
 
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "Badge.png";
 
     // Atlas and JSON files for the Animations
-    public static final String THE_DEFAULT_SKELETON_ATLAS = "char/defaultCharacter/skeleton.atlas";
-    public static final String THE_DEFAULT_SKELETON_JSON = "char/defaultCharacter/skeleton.json";
+    public static final String THE_WEAVER_SKELETON_ATLAS = "char/defaultCharacter/skeleton.atlas";
+    public static final String THE_WEAVER_SKELETON_JSON = "char/defaultCharacter/skeleton.json";
 
     // =============== /INPUT TEXTURE LOCATION/ =================
 
@@ -183,13 +183,13 @@ public class WeaverMod
 
     @Override
     public void receiveEditCharacters() {
-        logger.info("Beginning to edit characters. " + "Add " + TheWeaverEnum.THE_DEFAULT.toString());
+        logger.info("Beginning to edit characters. " + "Add " + TheWeaverEnum.THE_WEAVER.toString());
 
-        BaseMod.addCharacter(new TheWeaver("the Default", TheWeaverEnum.THE_DEFAULT),
-                makePath(THE_DEFAULT_BUTTON), makePath(THE_DEFAULT_PORTRAIT), TheWeaverEnum.THE_DEFAULT);
+        BaseMod.addCharacter(new TheWeaver("the Default", TheWeaverEnum.THE_WEAVER),
+                makePath(THE_WEAVER_BUTTON), makePath(THE_WEAVER_PORTRAIT), TheWeaverEnum.THE_WEAVER);
         
         receiveEditPotions();
-        logger.info("Added " + TheWeaverEnum.THE_DEFAULT.toString());
+        logger.info("Added " + TheWeaverEnum.THE_WEAVER.toString());
     }
 
     // =============== /LOAD THE CHARACTER/ =================
@@ -226,9 +226,9 @@ public class WeaverMod
         logger.info("Beginning to edit potions");
        
         // Class Specific Potion. If you want your potion to not be class-specific,
-        // just remove the player class at the end (in this case the "TheWeaverEnum.THE_DEFAULT".
+        // just remove the player class at the end (in this case the "TheWeaverEnum.THE_WEAVER".
         // Remember, you can press ctrl+P inside parentheses like addPotions)
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheWeaverEnum.THE_DEFAULT);
+        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheWeaverEnum.THE_WEAVER);
 
         logger.info("Done editing potions");
     }

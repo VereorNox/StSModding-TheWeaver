@@ -6,5 +6,5 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 public class TheWeaverEnum {
 
     @SpireEnum
-    public static AbstractPlayer.PlayerClass THE_DEFAULT;
+    public static AbstractPlayer.PlayerClass THE_WEAVER;
 }

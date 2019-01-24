@@ -87,9 +87,9 @@ public class TheWeaver extends CustomPlayer {
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout
-                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_DEFAULT_SHOULDER_1), // campfire pose
-                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_DEFAULT_SHOULDER_2), // another campfire pose
-                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_DEFAULT_CORPSE), // dead corpse
+                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_WEAVER_SHOULDER_1), // campfire pose
+                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_WEAVER_SHOULDER_2), // another campfire pose
+                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_WEAVER_CORPSE), // dead corpse
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
@@ -98,8 +98,8 @@ public class TheWeaver extends CustomPlayer {
         // =============== ANIMATIONS =================  
 
         loadAnimation(
-                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_DEFAULT_SKELETON_ATLAS),
-                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_DEFAULT_SKELETON_JSON),
+                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_WEAVER_SKELETON_ATLAS),
+                weavermod.WeaverMod.makePath(weavermod.WeaverMod.THE_WEAVER_SKELETON_JSON),
                 1.0f);
         AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
         e.setTime(e.getEndTime() * MathUtils.random());

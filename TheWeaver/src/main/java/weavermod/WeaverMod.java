@@ -19,6 +19,7 @@ import weavermod.potions.PlaceholderPotion;
 import weavermod.relics.DefaultClickableRelic;
 import weavermod.relics.PlaceholderRelic;
 import weavermod.relics.PlaceholderRelic2;
+import weavermod.relics.QueenAdministrator;
 import weavermod.variables.DefaultCustomVariable;
 import weavermod.variables.DefaultSecondMagicNumber;
 import org.apache.logging.log4j.LogManager;
@@ -243,11 +244,10 @@ public class WeaverMod
         logger.info("Adding relics");
 
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), AbstractCardEnum.DEFAULT_GRAY);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), AbstractCardEnum.DEFAULT_GRAY);
+        BaseMod.addRelicToCustomPool(new QueenAdministrator(), AbstractCardEnum.DEFAULT_GRAY);
 
         // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
+        //BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
 
         logger.info("Done adding relics!");
     }

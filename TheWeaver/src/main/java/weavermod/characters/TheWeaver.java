@@ -26,6 +26,7 @@ import weavermod.relics.PlaceholderRelic;
 import weavermod.relics.PlaceholderRelic2;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import weavermod.relics.QueenAdministrator;
 
 import java.util.ArrayList;
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
@@ -155,13 +156,9 @@ public class TheWeaver extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
 
-        retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
+        retVal.add(QueenAdministrator.ID);
 
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
+        UnlockTracker.markRelicAsSeen(QueenAdministrator.ID);
 
         return retVal;
     }

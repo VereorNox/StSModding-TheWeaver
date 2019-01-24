@@ -7,12 +7,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import weavermod.WeaverMod;
 import weavermod.relics.abstracts.WeaverRelic;
 
-public class StarterRelic extends WeaverRelic {
+public class QueenAdministrator extends WeaverRelic {
     public static final String ID = WeaverMod.makeID("QueenAdministrator");
 
     private static final int SWARM_AMOUNT = 1;
 
-    public StarterRelic() {
+    public QueenAdministrator() {
         super(ID, "QueenAdministrator.png", RelicTier.STARTER, LandingSound.MAGICAL);
     }
 
@@ -28,6 +28,6 @@ public class StarterRelic extends WeaverRelic {
     }
 
     public AbstractRelic makeCopy() {
-        return new StarterRelic();
+        return new QueenAdministrator();
     }
 }

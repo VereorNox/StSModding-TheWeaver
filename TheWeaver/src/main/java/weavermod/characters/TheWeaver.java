@@ -138,7 +138,7 @@ public class TheWeaver extends CustomPlayer {
         retVal.add(DefaultRareAttack.ID);
 
         retVal.add(DefaultCommonSkill.ID);
-        retVal.add(DefaultUncommonSkill.ID);
+        //retVal.add(DefaultUncommonSkill.ID);
         retVal.add(DefaultRareSkill.ID);
 
         retVal.add(DefaultCommonPower.ID);

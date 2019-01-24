@@ -10,7 +10,7 @@
   "theWeaver:PepperSpray": {
     "NAME": "Pepper Spray",
     "DESCRIPTION": "Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Weak."
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak. "
   },
   "theWeaver:DefaultCommonPower": {
     "NAME": "Hold Place",

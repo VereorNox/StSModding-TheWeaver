@@ -39,11 +39,6 @@
             <scope>system</scope>
             <systemPath>${basedir}/../lib/StSLib.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>weavermod</groupId>
-            <artifactId>WeaverMod</artifactId>
-            <version>1.0.0</version>
-        </dependency>
     </dependencies>
 
     <properties>

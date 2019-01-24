@@ -360,4 +360,9 @@ public class WeaverMod
         return "theWeaver:" + idText;
     }
 
+    public static String assetPath(String path)
+    {
+        return "weaverModResources/" + path;
+    }
+
 }

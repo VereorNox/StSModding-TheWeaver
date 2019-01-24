@@ -7,6 +7,11 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "theWeaver:PepperSpray": {
+    "NAME": "Pepper Spray",
+    "DESCRIPTION": "Apply !M! Weak.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak. "
+  },
   "theWeaver:DefaultCommonPower": {
     "NAME": "Hold Place",
     "DESCRIPTION": "Gain !M! Keyword.",

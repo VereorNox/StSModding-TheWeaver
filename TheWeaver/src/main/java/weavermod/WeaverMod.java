@@ -271,6 +271,7 @@ public class WeaverMod
         // Add the cards
         BaseMod.addCard(new PepperSpray());
         BaseMod.addCard(new Restrain());
+        BaseMod.addCard(new Brace());
 
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
@@ -288,6 +289,7 @@ public class WeaverMod
         // Unlock the cards
         UnlockTracker.unlockCard(PepperSpray.ID);
         UnlockTracker.unlockCard(Restrain.ID);
+        UnlockTracker.unlockCard(Brace.ID);
 
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);

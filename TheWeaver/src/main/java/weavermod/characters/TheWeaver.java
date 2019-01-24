@@ -39,10 +39,10 @@ public class TheWeaver extends CustomPlayer {
     // =============== BASE STATS =================
 
     public static final int ENERGY_PER_TURN = 3;
-    public static final int STARTING_HP = 75;
-    public static final int MAX_HP = 75;
+    public static final int STARTING_HP = 50;
+    public static final int MAX_HP = 50;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
+    public static final int CARD_DRAW = 7;
     public static final int ORB_SLOTS = 3;
 
     // =============== /BASE STATS/ =================
@@ -134,21 +134,25 @@ public class TheWeaver extends CustomPlayer {
 
         logger.info("Begin loading starter Deck Strings");
 
-        retVal.add(DefaultCommonAttack.ID);
-        retVal.add(DefaultUncommonAttack.ID);
-        retVal.add(DefaultRareAttack.ID);
+        retVal.add(PepperSpray.ID);
+        retVal.add(Restrain.ID);
+        retVal.add(Brace.ID);
 
-        retVal.add(DefaultCommonSkill.ID);
+        //retVal.add(DefaultCommonAttack.ID);
+        //retVal.add(DefaultUncommonAttack.ID);
+        //retVal.add(DefaultRareAttack.ID);
+
+        //retVal.add(DefaultCommonSkill.ID);
         //retVal.add(DefaultUncommonSkill.ID);
-        retVal.add(DefaultRareSkill.ID);
+        //retVal.add(DefaultRareSkill.ID);
 
-        retVal.add(DefaultCommonPower.ID);
-        retVal.add(DefaultUncommonPower.ID);
-        retVal.add(DefaultRarePower.ID);
+        //retVal.add(DefaultCommonPower.ID);
+        //retVal.add(DefaultUncommonPower.ID);
+        //retVal.add(DefaultRarePower.ID);
 
-        retVal.add(DefaultAttackWithVariable.ID);
-        retVal.add(DefaultSecondMagicNumberSkill.ID);
-        retVal.add(OrbSkill.ID);
+        //retVal.add(DefaultAttackWithVariable.ID);
+        //retVal.add(DefaultSecondMagicNumberSkill.ID);
+        //retVal.add(OrbSkill.ID);
         return retVal;
     }
 

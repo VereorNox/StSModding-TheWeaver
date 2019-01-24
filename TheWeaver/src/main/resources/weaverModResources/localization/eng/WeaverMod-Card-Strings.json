@@ -6,8 +6,11 @@
   },
   "theWeaver:PepperSpray": {
     "NAME": "Pepper Spray",
-    "DESCRIPTION": "Apply !M! Weak.",
-    "UPGRADE_DESCRIPTION": "Apply !M! Weak. "
+    "DESCRIPTION": "Apply !M! Weak."
+  },
+  "theWeaver:Brace": {
+    "NAME": "Brace",
+    "DESCRIPTION": "Discard your hand, gain !B! Block per discarded card."
   },
   "theWeaver:DefaultCommonAttack": {
     "NAME": "Strike",

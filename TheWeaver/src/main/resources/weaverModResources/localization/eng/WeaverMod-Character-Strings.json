@@ -1,12 +1,12 @@
 {
         "theWeaver:DefaultCharacter": {
                 "NAMES": [
-                        "The Default"
+                        "The Weaver"
                 ],
                 "TEXT": [
-                        "THE_WEAVER exists and is valid. THE_WEAVER wishes to T o uuuch# NL Second placeholder line of description text.",
-                        "NL You TOUCH the heart.",
-                        "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~basic~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+                        "The Weaver, doing the wrong things for the right reasons. She holds the power over insects and arachnids. NL A high pain tolerance is also nice.",
+                        "NL You send your swarm.",
+                        "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~villainous~ ~one,~ ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
                 ]
         }
 }

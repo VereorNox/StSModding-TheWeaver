@@ -1,26 +1,26 @@
 package weavermod.cards;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-
-import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 import weavermod.WeaverMod;
 import weavermod.patches.AbstractCardEnum;
 
-public class PepperSpray extends CustomCard {
-    public static final String ID = weavermod.WeaverMod.makeID("PepperSpray");
+public class Restrain extends CustomCard {
+    public static final String ID = weavermod.WeaverMod.makeID("Restrain");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = WeaverMod.makePath(WeaverMod.DEFAULT_UNCOMMON_SKILL);
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    public static final String[] EXTENDED_DESCRIPTION = cardStrings.EXTENDED_DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -28,31 +28,40 @@ public class PepperSpray extends CustomCard {
     public static final CardColor COLOR = AbstractCardEnum.DEFAULT_GRAY;
 
     private static final int COST = 1;
-    private static final int UPGRADE_COST = 0;
-    private static int AMOUNT = 2;
+    private static int BLOCK = 8;
+    private static int BLOCK_MODIFIER = 5;
+    private static int BLOCK_UPGRADE = 4;
 
 
-    public PepperSpray() {
+    public Restrain() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        baseMagicNumber = magicNumber = AMOUNT;
-
+        this.baseBlock = BLOCK;
+        this.baseMagicNumber = this.magicNumber = BLOCK_MODIFIER;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p ,new WeakPower(m, this.magicNumber, false), this.magicNumber));
+        if(m != null && (m.intent == AbstractMonster.Intent.ATTACK || m.intent == AbstractMonster.Intent.ATTACK_BUFF || m.intent == AbstractMonster.Intent.ATTACK_DEBUFF || m.intent == AbstractMonster.Intent.ATTACK_DEFEND)) {
+            if(m.hasPower(WeakPower.POWER_ID)) {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block + magicNumber));
+            } else {
+                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+            }
+        } else {
+            AbstractDungeon.effectList.add(new ThoughtBubble(AbstractDungeon.player.dialogX, AbstractDungeon.player.dialogY, EXTENDED_DESCRIPTION[0], true));
+        }
     }
 
     @Override
     public AbstractCard makeCopy() {
-        return new PepperSpray();
+        return new Restrain();
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.upgradeBaseCost(UPGRADE_COST);
+            this.upgradeBlock(BLOCK_UPGRADE);
             initializeDescription();
         }
     }

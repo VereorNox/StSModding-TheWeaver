@@ -269,13 +269,15 @@ public class WeaverMod
 
         logger.info("Adding cards");
         // Add the cards
+        BaseMod.addCard(new PepperSpray());
+        BaseMod.addCard(new Restrain());
+
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());
         BaseMod.addCard(new DefaultCommonAttack());
         BaseMod.addCard(new DefaultAttackWithVariable());
         BaseMod.addCard(new DefaultCommonSkill());
         BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new PepperSpray());
         BaseMod.addCard(new DefaultUncommonAttack());
         BaseMod.addCard(new DefaultUncommonPower());
         BaseMod.addCard(new DefaultRareAttack());
@@ -284,13 +286,15 @@ public class WeaverMod
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards
+        UnlockTracker.unlockCard(PepperSpray.ID);
+        UnlockTracker.unlockCard(Restrain.ID);
+
         UnlockTracker.unlockCard(OrbSkill.ID);
         UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonAttack.ID);
         UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
         UnlockTracker.unlockCard(DefaultCommonSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(PepperSpray.ID);
         UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
         UnlockTracker.unlockCard(DefaultUncommonPower.ID);
         UnlockTracker.unlockCard(DefaultRareAttack.ID);

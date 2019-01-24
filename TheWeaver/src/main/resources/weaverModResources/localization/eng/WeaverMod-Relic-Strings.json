@@ -20,5 +20,13 @@
 			"[#2aecd7]Usable [#2aecd7]once [#2aecd7]per [#2aecd7]turn.[] NL #yEvoke your rightmost Orb.",
 			"YOU ARE MINE!"
 		]
+	},
+	"theWeaver:QueenAdministrator": {
+		"NAME": "Queen Administrator",
+		"FLAVOR": "Bug Powers yo",
+		"DESCRIPTIONS": [
+			"At the start of each combat, #yChannel #b",
+			" #yDarkness."
+		]
 	}
 }

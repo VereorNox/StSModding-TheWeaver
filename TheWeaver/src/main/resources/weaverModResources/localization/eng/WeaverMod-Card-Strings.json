@@ -4,6 +4,10 @@
     "DESCRIPTION": "If the enemy intends to attack, gain !B! Block. If the enemy is Weak, gain an additional !M! Block.",
     "EXTENDED_DESCRIPTION": ["This enemy doesn't intend to attack."]
   },
+  "theWeaver:Tag": {
+    "NAME": "Tag",
+    "DESCRIPTION": "Enemy loses !M! Strength. NL [#ffff00]Exhaust[]."
+  },
   "theWeaver:PepperSpray": {
     "NAME": "Pepper Spray",
     "DESCRIPTION": "Apply !M! Weak."

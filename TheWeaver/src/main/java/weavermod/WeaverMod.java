@@ -272,6 +272,7 @@ public class WeaverMod
         BaseMod.addCard(new PepperSpray());
         BaseMod.addCard(new Restrain());
         BaseMod.addCard(new Brace());
+        BaseMod.addCard(new Tag());
 
         BaseMod.addCard(new OrbSkill());
         BaseMod.addCard(new DefaultSecondMagicNumberSkill());

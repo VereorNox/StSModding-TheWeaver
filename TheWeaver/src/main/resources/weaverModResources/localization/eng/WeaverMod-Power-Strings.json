@@ -6,5 +6,9 @@
 "theWeaver:RarePower": {
         "NAME": "Placeholder Power",
         "DESCRIPTIONS": ["At the start of your turn, TOUCH ", " enemy." , " enemies."]
+},
+"theWeaver:Repositioned": {
+        "NAME": "Repositioned",
+        "DESCRIPTIONS": ["At the start of your next turn, gain 3 Dex per stack if you haven't been hit."]
 }
 }

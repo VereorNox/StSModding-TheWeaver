@@ -6,7 +6,7 @@
   },
   "theWeaver:Tag": {
     "NAME": "Tag",
-    "DESCRIPTION": "Enemy loses !M! Strength. NL [#ffff00]Exhaust[]."
+    "DESCRIPTION": "Enemy loses !M! Strength. NL Exhaust."
   },
   "theWeaver:PepperSpray": {
     "NAME": "Pepper Spray",

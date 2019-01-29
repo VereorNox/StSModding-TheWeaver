@@ -1,10 +1,12 @@
 package weavermod.relics;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import weavermod.WeaverMod;
+import weavermod.powers.Swarm;
 import weavermod.relics.abstracts.WeaverRelic;
 
 public class QueenAdministrator extends WeaverRelic {
@@ -23,8 +25,8 @@ public class QueenAdministrator extends WeaverRelic {
 
     @Override
     public void atBattleStart() {
-        AbstractDungeon.actionManager.addToBottom(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        AbstractDungeon.player.channelOrb(new Dark());
+        flash();
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new Swarm(), 1));
     }
 
     public AbstractRelic makeCopy() {

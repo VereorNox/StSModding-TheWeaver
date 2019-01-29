@@ -13,7 +13,7 @@ import basemod.abstracts.CustomCard;
 
 import weavermod.WeaverMod;
 import weavermod.patches.AbstractCardEnum;
-
+//TODO: Basic Strike and Strike TAGGING
 public class DefaultCommonAttack extends CustomCard {
 
     /*

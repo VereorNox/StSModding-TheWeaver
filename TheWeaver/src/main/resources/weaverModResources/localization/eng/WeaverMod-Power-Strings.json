@@ -10,5 +10,9 @@
 "theWeaver:Repositioned": {
         "NAME": "Repositioned",
         "DESCRIPTIONS": ["At the start of your next turn, gain 3 Dex per stack if you haven't been hit."]
-}
+},
+"theWeaver:Swarm": {
+          "NAME": "Swarm",
+        "DESCRIPTIONS": ["Deal 3 damage per stack to the lowest enemy"]
+        }
 }

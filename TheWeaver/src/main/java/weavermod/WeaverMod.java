@@ -358,7 +358,9 @@ public class WeaverMod
     @Override
     public void receiveEditKeywords() {
         final String[] placeholder = { "keyword", "keywords", "Keyword", "Keywords" };
+        final String[] Swarm = { "swarm", "swarms","Swarm","Swarms" };
         BaseMod.addKeyword(placeholder, "Whenever you play a card, gain 1 dexterity this turn only.");
+        BaseMod.addKeyword(Swarm , "At the end of each turn, deal 3 damage to all enemies per stack.");
 
     }
 

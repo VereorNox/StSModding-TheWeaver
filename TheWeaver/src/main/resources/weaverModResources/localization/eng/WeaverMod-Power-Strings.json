@@ -13,6 +13,6 @@
 },
 "theWeaver:Swarm": {
           "NAME": "Swarm",
-        "DESCRIPTIONS": ["Deal 3 damage per stack to the lowest enemy"]
+        "DESCRIPTIONS": ["You have gathered ", "a swarm", "multiple swarms."]
         }
 }

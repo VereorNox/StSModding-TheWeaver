@@ -20,7 +20,7 @@ public class QueenAdministrator extends WeaverRelic {
 
     @Override
     public String getUpdatedDescription() {
-        return DESCRIPTIONS[0] + SWARM_AMOUNT + DESCRIPTIONS[1];
+        return DESCRIPTIONS[0];
     }
 
     @Override

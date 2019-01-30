@@ -23,16 +23,34 @@ public class Swarm extends AbstractPower {
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     public static final String IMG = WeaverMod.makePath(WeaverMod.COMMON_POWER);
-    private int damage;
+    private int damage = 3;
 
-    public Swarm() {
-
+    public Swarm(AbstractCreature owner, AbstractCreature source, final int amount) {
+        name = NAME;
+        ID = POWER_ID;
+        this.owner = owner;
+        this.amount = amount;
+        updateDescription();
+        type = PowerType.BUFF;
+        isTurnBased = true;
+        img = new Texture(IMG);
+        this.source = source;
     }
 
     @Override
-    public void atEndOfTurn(boolean isEnemy) {
-        new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.damage, true, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE);
+    public void atEndOfRound( ) {
+        new DamageAllEnemiesAction(AbstractDungeon.player, DamageInfo.createDamageMatrix(this.damage * this.amount, true, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.POISON);
 
+    }
+
+    public void updateDescription() {
+        if (amount == 1) {
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        }
+
+        else if (amount > 1) {
+            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
+        }
     }
 
 }
